@@ -4,73 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wxn0brP</title>
-    <meta name="color-scheme" content="dark light">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #0c0c0c;
-            color: #ffffff;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            font-size: 1.2rem;
-        }
-
-        main {
-            padding: 30px 20px;
-            border-radius: 10px;
-            background-color: #3d0441;
-            text-align: center;
-        }
-
-        a {
-            text-decoration: none;
-            width: 5rem;
-            color: white;
-            border: 1px solid white;
-            border-radius: 10px;
-            padding: 10px;
-        }
-
-        a:hover,
-        a:active {
-            color: #0c0c0c;
-            background-color: white;
-        }
-
-        div {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-        }
-
-        #yes::after {
-            content: "NO";
-        }
-
-        #yes:hover::after {
-            content: "YES";
-        }
-    </style>
+    <title>echo 404 > /dev/null</title>
+    <meta name="description" content="This page doesn't exist.">
+    <meta name="color-scheme" content="dark">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="404.css">
 </head>
 
 <body>
-    <main>
-        <h2>Do you want return to main page???</h2>
-        <br>
-        <div>
-            <a href="/">YES</a>
-            <a href="/" id="yes"></a>
+    <div id="container">
+        <h1 id="code">
+            <span data-digit="4">4</span>
+            <span data-digit="0">0</span>
+            <span data-digit="4">4</span>
+        </h1>
+        <div id="divider"></div>
+        <p id="message"><span>page not found</span> - nothing here but void</p>
+        <div id="actions">
+            <a href="/" class="btn" id="btn-home">&lt;- go home</a>
+            <button class="btn" id="btn-stay">stay here</button>
         </div>
-    </main>
+    </div>
+
+    <div id="status">HTTP 404 - NOT FOUND</div>
+    <div id="toast"></div>
+
+    <script src="404.js"></script>
 </body>
 
 </html>
