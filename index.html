@@ -87,9 +87,9 @@
         const showSecondsSpan = document.getElementById("showSecondsSpan");
 
         function update() {
-            const date = new Date().toISOString().slice(11, 19).replaceAll(":", "");
+            const time = new Date().toTimeString().replaceAll(":", "");
             for (let i = 0; i < 6; i++)
-                img[i].src = `./assets/counter/${date[i]}.gif`;
+                img[i].src = `./assets/counter/${time[i]}.gif`;
         }
 
         function change() {
